@@ -3,7 +3,8 @@ import os
 import io
 import pyzipper
 from PIL import Image
-from moviepy import VideoFileClip
+#from moviepy import VideoFileClip
+from moviepy.video.io.VideoFileClip import VideoFileClip
 
 # 1. CONFIGURAÇÃO GLOBAL (Deve ser a primeira chamada Streamlit)
 st.set_page_config(
