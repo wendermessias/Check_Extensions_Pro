@@ -2,3 +2,4 @@ streamlit
 Pillow
 pyzipper
 moviepy==1.0.3
+decorator<5.0.0
