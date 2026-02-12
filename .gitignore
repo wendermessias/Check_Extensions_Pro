@@ -1,9 +1,5 @@
-.venv/
-venv/
-.idea/
-__pycache__/
-*.py[cod]
-temp_*
-*.mp4
-*.jpg
-.streamlit/
+.venv/  
+.idea/  
+__pycache__/  
+temp_*  
+*.mp4 
