@@ -1,21 +1,9 @@
-# Ambiente Virtual
-venv/
 .venv/
-env/
-
-# Cache do Python
+venv/
+.idea/
 __pycache__/
 *.py[cod]
-
-# Arquivos temporários do MoviePy/Sistema
 temp_*
 *.mp4
 *.jpg
-.DS_Store
-
-# Streamlit
-.streamlit/config.toml
-
-# Configurações do PyCharm
-.idea/
-cmake-build-*/
+.streamlit/
