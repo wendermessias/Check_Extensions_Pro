@@ -1,37 +1,58 @@
+# 🛠️ Check Extensions Ultra & Converter
 
-🖼️ Check Extensions Ultra & Converter
+---
 
- Este projeto é uma ferramenta web de alta performance desenvolvida em Python com Streamlit. Ele foi desenhado para quem precisa converter imagens de diversos formatos para JPG ou PDF sem perder um único pixel de qualidade, mantendo as dimensões originais e garantindo a máxima fidelidade de cores.
+## ✨ O que há de novo (Versão Ultra)
 
-✨ O que há de novo (Versão Ultra) 
-    Diferente de conversores comuns que sacrificam a nitidez para reduzir o tamanho do arquivo, esta ferramenta foca na Fidelidade Máxima:
+Mantivemos tudo que já era excelente e ampliamos para muito mais:
 
-Qualidade 100%: Sem artefatos de compressão JPEG.
+### 🖼️ Imagens — Fidelidade Máxima
 
-Subsampling 0: Preservação total da nitidez das cores (Chroma Subsampling 4:4:4).
+Diferente de conversores comuns que sacrificam a nitidez para reduzir o tamanho do arquivo, esta ferramenta foca na **Fidelidade Máxima** :
 
-Fidelidade Dimensional: As dimensões de largura e altura são preservadas em 100%, assim como o DPI original.
+- Qualidade 100%: Sem artefatos de compressão JPEG
+- Subsampling 0: Preservação total da nitidez das cores (Chroma Subsampling 4:4:4)
+- Fidelidade Dimensional: As dimensões de largura e altura são preservadas em 100%, assim como o DPI original
+- **Inteligência de Formato:** Arquivos já em JPG/JPEG não são reprocessados — o sistema detecta automaticamente e mantém o original, evitando conversões desnecessárias
+- Conversão para PDF: Agora você pode agrupar todas as suas imagens em um único documento PDF profissional
 
-Conversão para PDF: Agora você pode agrupar todas as suas imagens em um único documento PDF profissional.
+### 🎬 Vídeos — Conversão para MP4
 
- Funcionalidades Principais Upload Multiformato: Suporte para PNG, WEBP, BMP, TIFF, HEIC e mais.
+- Conversão Universal: Transforma AVI, MKV, MOV, WMV, FLV, WebM e outros formatos em MP4 (H.264 + AAC)
+- Suporte a arquivos de até 1 GB
+- Lote Protegido: Vários vídeos convertidos e empacotados em ZIP protegido por senha
+- Gerenciamento Seguro: Arquivos temporários com nomes únicos e limpeza automática, sem conflitos
 
-Validação em Tempo Real: O sistema verifica a integridade do cabeçalho da imagem antes do processamento.
+### 📸 Extração de Quadros
 
-Barra de Progresso Dinâmica: Acompanhe o status da conversão em tempo real, ideal para grandes volumes de arquivos.
+- Extrai quadros de **GIFs** e de **vídeos**
+- Controle de Intervalo: Defina quantos quadros extrair por segundo ou por passos
+- Flexibilidade de Download: Salve apenas o último quadro ou todos em ZIP protegido
+- Qualidade Preservada: Cada quadro salvo como JPG em resolução máxima
 
-Segurança Reforçada (ZIP): Compactação com criptografia AES-256. O sistema possui uma "trava de segurança" que impede o download de ZIPs sem a definição de uma senha.
+---
 
-Interface Inteligente:
+## 🚀 Tecnologias Utilizadas
 
-1 Imagem: Download direto do arquivo convertido.
+- **Python** — Linguagem base
+- **Streamlit** — Framework para a interface web
+- **Pillow (PIL)** — Processamento e conversão de imagens
+- **MoviePy** — Conversão e edição de vídeos
+- **ImageIO** — Leitura e extração de quadros de GIFs
+- **Pyzipper** — Compactação com criptografia AES-256
+- **In-Memory Buffer (io)** — Processamento ultra rápido sem criação de arquivos permanentes
+- **UUID** — Nomes únicos para arquivos temporários, sem conflitos
 
-Múltiplas Imagens: Opção de empacotamento em ZIP ou fusão em um único PDF.
+---
 
-🚀 Tecnologias Utilizadas
+## 🔒 Segurança e Privacidade
 
-Python - Linguagem base. Streamlit - Framework para a interface web. Pillow (PIL) - Processamento e conversão de imagens. Pyzipper - Compactação de arquivos com criptografia avançada. In-Memory Buffer (io) - Processamento ultra rápido sem criação de arquivos temporários no servidor.
+Os arquivos são processados inteiramente na memória RAM. Assim que a sessão é encerrada ou a página é atualizada, os dados são descartados, garantindo que suas imagens e vídeos não fiquem armazenados permanentemente no servidor.
 
-Segurança e Privacidade Os arquivos são processados inteiramente na memória RAM. Assim que a sessão é encerrada ou a página é atualizada, os dados são descartados, garantindo que suas imagens não fiquem armazenadas permanentemente no servidor.
+- ✅ Processamento em memória — sem deixar rastros
+- ✅ Limpeza automática de arquivos temporários
+- ✅ Criptografia forte em todos os ZIPs
+- ✅ Senha obrigatória para empacotamento
 
-Desenvolvido com foco em precisão e segurança. 🚀
+Desenvolvido com foco em precisão, velocidade e segurança. 🚀
+Desenvolvido por Wendermessias
