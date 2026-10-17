@@ -1,5 +1,7 @@
-.venv/
+.devcontainer
 .idea/
+.venv/
+.vscode
 __pycache__/
 temp_*
 *.mp4
